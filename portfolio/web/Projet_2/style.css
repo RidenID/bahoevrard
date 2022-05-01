@@ -1,0 +1,250 @@
+* {margin: 0; padding: 0; 
+    box-sizing: border-box;}
+
+
+a {text-decoration: none;}
+
+h1, h2, h3, h4, h5 {font-weight: 500; text-transform:capitalize;}
+
+
+.header_0 { font-size: 45px;}
+.header_1 { font-size: 40px;}
+.header_2 { font-size: 35px;}
+.center_text { text-align: center;}
+.ptb_1 { padding: 40px 0;}
+
+.container {
+    max-width: 2400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.location_section { background-color: #fafafa;}
+
+.location_section_top_text{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.locations  { display:flex; padding:16px;}
+.location { flex: 1; padding: 30px 30px 15px 30px;}
+.location_text { padding-top: 5px;}
+
+.btn{
+     color:#1d1d1d ;
+     background-color: #fff;
+     padding: 10px 20px;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+/* menu de navigation */
+.navbar {
+    background-color: whitesmoke;
+    color: #fff;
+    display:flex;
+    justify-content: space-between;
+    padding: 9px;
+}
+.navbar ul {
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+	color:black;
+    padding: 12px;
+}
+.navbar ul li a:hover {
+	background-color:orangered;
+	color: white;
+    border-radius: 4px;
+}
+
+/* deuxième menu navigation de la page gaming*/
+.navbar2{
+    width: 100%;
+    margin: 0 auto;
+    background-color:#fafafa;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar2 ul{
+    list-style-type: none;
+}
+
+.navbar2 ul li{
+    float:left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.navbar2 ul::after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.navbar2 a{
+    display:block;
+    text-decoration: none;
+    color:black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+.navbar2 ul li a:hover {
+	background-color:rgb(255, 119, 41);
+	color: white;
+    border-radius: 20px;
+}
+
+
+/* stylisation du menu accueil */
+.principal {
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+}
+.principal a {
+    color:black;
+    padding:12px;
+}
+
+/* pied de page */
+.main_footer {
+    background-color: #242424; 
+    color: #fff;   
+}
+
+
+/* header_index */
+.header_index {
+    background: url('img/img1.jpg')
+     no-repeat center center/cover;
+    height: 70.9vh;
+}
+
+.header_index .header_content {
+    background-color: #00000065;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+.header_index {
+    color: #fff;
+}
+/* animation du boutton did you know */
+.btn_cta {
+    background-color: white;
+}
+.btn_cta:hover { 
+    background-color: orangered;
+     color: white; 
+    }
+
+
+/* header_gaming */
+/*****carrousel 3d automatique*****/
+
+*{box-sizing : border-box}
+
+img{max-width:100%;}
+
+.contenu_carou_auto{
+   margin:2rem auto;
+   width:420px;
+   height:279px;
+   perspective:8000px;
+}
+		
+.caroussel-image{
+	animation:rotation 24s infinite alternate linear;	
+    transform-style:preserve-3d;
+    position:relative;	
+
+}
+
+.caroussel-image img{
+   position: absolute;
+   top:0;
+   left: 0;
+}
+		
+.caroussel-image img{
+	filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+    width:400px;
+    height:266px;
+    left:10px;
+    outline:1px solid transparent;
+    backface-visibility:hidden;
+}
+		
+.caroussel-image img:nth-child(1){
+	transform:translate3d(0,0,495px);
+}
+		
+.caroussel-image img:nth-child(2){
+	transform:rotateY(45deg) translateZ(495px);
+}
+		
+.caroussel-image img:nth-child(3){
+	transform:rotateY(90deg) translateZ(495px);
+}
+	
+.caroussel-image img:nth-child(4){
+	transform:rotateY(135deg) translateZ(495px);
+}
+	
+.caroussel-image img:nth-child(5){
+	transform:rotateY(180deg) translateZ(495px);
+}
+	
+.caroussel-image img:nth-child(6){
+	transform:rotateY(225deg) translateZ(495px);
+}
+	
+.caroussel-image img:nth-child(7){
+	transform:rotateY(270deg) translateZ(495px);
+}
+	
+.caroussel-image img:nth-child(8){
+	transform:rotateY(315deg) translateZ(495px);
+}
+	
+@keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(1turn)}}
+	
+/*****fin carrousel 3d automatique*****/
+
+
+/* section nous contacter */
+.contact .contact_text {padding-bottom: 30px;}
+.contact .contact_form label {
+    width: 62%;
+    display: block;
+}
+.contact .contact_form input,
+.contact .contact_form textarea{
+    width: 30%;
+    padding: 18px;
+    margin: 7px;
+    border:1px solid #dddddd;
+    border-radius: 5px; 
+}
+.input_required { color: red;}
+.btn_contact {
+    background-color: orangered;
+    color:white;
+    font-size: 20px;
+}
+.btn_contact:hover { 
+    background-color: white;
+     color: orangered; 
+    }
