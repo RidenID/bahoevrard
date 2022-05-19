@@ -409,6 +409,7 @@ section {
           transform: translateY(-100%);
   -webkit-transition: .2s linear;
   transition: .2s linear;
+  border-radius: 1em;
 }
 
 .portfolio .box-container .box .content h3 {
@@ -432,6 +433,10 @@ section {
 
 .portfolio .box-container .box .content a:hover {
   color: #fff;
+}
+
+.portfolio img{
+  border-radius: 0.9em;
 }
 
 .blogs .box-container {
@@ -508,6 +513,86 @@ section {
   padding: 1rem 0;
   line-height: 2;
 }
+.blogs .box-container .box h3{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: normal;
+  text-align: justify;
+}
+
+/* article */
+. .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+}
+
+.article .box-container .box {
+  text-align: center;
+  margin: 0rem 4rem;
+  padding: 3rem;
+  border-radius: .5rem;
+  background: #1a1a1a;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+
+height: 300rem;        }
+
+.article .box-container .box .texte {
+  margin:auto;
+  height: 6.5rem;
+  width: 85%;
+  margin-bottom: 6rem;
+}
+
+.article .box-container .box .image {
+  margin:auto;
+  margin-bottom: 0.5rem;
+  height: 35rem;
+  width: 85%;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.article .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.article .box-container .box .content h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+}
+
+.article .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+.article .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: left;
+  line-height: 2;
+}
+.article .box-container .box h3{
+ 
+  font-size: 2rem;
+  color: #fff;
+  font-weight: normal;
+  text-align: justify;
+}
+
+
 
 .contact .row {
   display: -webkit-box;
@@ -633,6 +718,7 @@ section {
   section {
     padding: 3rem 2rem;
   }
+  
 }
 
 @media (max-width: 768px) {
